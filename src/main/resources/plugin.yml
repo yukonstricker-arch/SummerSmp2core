@@ -1,0 +1,110 @@
+name: SummerSMPCore
+version: 2.0.0
+main: net.summersmp.core.SummerSMPCore
+api-version: '26.1.2'
+author: SummerSMP
+description: Full-featured Lifesteal SMP plugin for Summer SMP 2.
+
+commands:
+  rtp:
+    description: Random teleport into the world.
+    permission: summersmp.rtp
+  spawn:
+    description: Teleport to the hub spawn.
+    permission: summersmp.spawn
+  world:
+    description: Teleport to 0,0 in the survival world.
+    permission: summersmp.world
+  tpa:
+    description: Ask to teleport to a player.
+    permission: summersmp.tpa
+  tpahere:
+    description: Ask a player to teleport to you.
+    permission: summersmp.tpa
+  tpaccept:
+    description: Accept a teleport request.
+    permission: summersmp.tpa
+  tpdeny:
+    description: Deny a teleport request.
+    permission: summersmp.tpa
+  ban:
+    description: Ban a player with an appeal code.
+    permission: summersmp.ban
+  unban:
+    description: Unban a player.
+    permission: summersmp.unban
+  bancode:
+    description: Look up a ban appeal code.
+    permission: summersmp.ban
+  maces:
+    description: View or adjust the Mace counter.
+    permission: summersmp.maces
+  rules:
+    description: View the server rules.
+    permission: summersmp.rules
+  help:
+    description: View available commands.
+    permission: summersmp.help
+  support:
+    description: Get a link to the Discord for support.
+    permission: summersmp.support
+  broadcast:
+    description: Send a broadcast message to all players.
+    permission: summersmp.broadcast
+  kick:
+    description: Kick a player from the server.
+    permission: summersmp.kick
+  mute:
+    description: Mute a player.
+    permission: summersmp.mute
+  unmute:
+    description: Unmute a player.
+    permission: summersmp.mute
+  pause:
+    description: Put the server in maintenance mode.
+    permission: summersmp.pause
+  unpause:
+    description: End maintenance mode.
+    permission: summersmp.pause
+  restart:
+    description: Restart the server with a countdown.
+    permission: summersmp.restart
+  dragon:
+    description: Check time until the dragon fight.
+    permission: summersmp.dragon
+
+permissions:
+  summersmp.rtp:
+    default: true
+  summersmp.rtp.nocooldown:
+    default: op
+  summersmp.spawn:
+    default: true
+  summersmp.world:
+    default: true
+  summersmp.tpa:
+    default: true
+  summersmp.ban:
+    default: op
+  summersmp.unban:
+    default: op
+  summersmp.maces:
+    default: op
+  summersmp.rules:
+    default: true
+  summersmp.help:
+    default: true
+  summersmp.support:
+    default: true
+  summersmp.broadcast:
+    default: op
+  summersmp.kick:
+    default: op
+  summersmp.mute:
+    default: op
+  summersmp.pause:
+    default: op
+  summersmp.restart:
+    default: op
+  summersmp.dragon:
+    default: true

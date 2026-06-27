@@ -1,0 +1,74 @@
+# ===== SummerSMPCore v2.0 config =====
+
+mace-limit: 3
+announce-heavy-core-claims: true
+default-ban-reason: "Banned by staff"
+spawn-world: hub
+discord-link: "https://discord.gg/pfC7kjSG9"
+
+disable-elytra: true
+disabled-movement-items:
+  - CHORUS_FRUIT
+
+big-ender-chest:
+  enabled: true
+
+hacked-client-detection:
+  enabled: true
+  flagged-brands:
+    - wurst
+    - impact
+    - aristois
+    - meteor
+    - rusherhack
+    - liquidbounce
+  ban-on-repeat: true
+  ban-duration: 7d
+
+# Dragon fight event
+dragon:
+  year: 2026
+  month: 7
+  day: 17
+  hour: 15
+  timezone: "America/New_York"
+
+rules:
+  - "1. No cheating or hacking (x-ray, fly, killaura, autoclickers, dupes). Punishment: 1d / 7d / perm."
+  - "2. No lag machines or anything that harms server performance. Punishment: 1d / 7d / perm."
+  - "3. No exploiting bugs, glitches, or plugin loopholes. Punishment: 1d / 7d / perm."
+  - "4. No ban evasion or alt accounts. Punishment: instant permanent ban."
+  - "5. No intentionally crashing or damaging the server. Punishment: instant permanent ban."
+  - "6. Use common sense - don't ruin the experience for others."
+
+combat:
+  tag-seconds: 20
+  blocked-commands:
+    - rtp
+    - tpa
+    - tpahere
+    - tpaccept
+    - spawn
+    - world
+    - home
+    - sethome
+    - back
+    - warp
+    - tp
+    - tphere
+    - teleport
+    - hub
+    - lobby
+
+rtp:
+  world: world
+  radius: 5000
+  min-radius: 100
+  warmup-seconds: 5
+  cooldown-seconds: 15
+  max-attempts: 24
+
+tpa:
+  request-seconds: 60
+  send-cooldown-seconds: 15
+  accept-warmup-seconds: 5
